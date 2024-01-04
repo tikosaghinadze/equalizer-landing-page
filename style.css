@@ -22,6 +22,7 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: flex-start;
+  text-align: left;
 }
 header {
   width: 146px;
@@ -58,7 +59,7 @@ main {
   flex-direction: column;
 }
 .illustration-app {
-  max-width: 375px;
+  width: 375px;
   border-radius: 12px;
   position: relative;
   background-color: #191826;
@@ -68,13 +69,8 @@ main {
   max-width: 208.972px;
   position: absolute;
   top: -100px;
-  left: 52px;
+  left: 84px;
 }
-.mobile-background {
-  max-width: 375px;
-  width: 100%;
-}
-
 /***********************/
 /*PREMIUM EQ*/
 /***********************/
@@ -88,6 +84,8 @@ main {
   align-items: center;
   flex-direction: column;
   gap: 12px;
+  z-index: 2;
+  margin-top: -35px;
 }
 .premium-eq-content {
   display: flex;
@@ -95,9 +93,9 @@ main {
   flex-direction: column;
   align-items: flex-start;
   gap: 20px;
+  text-align: left;
 }
 .header-eq {
-  width: 302px;
   color: #fcfaf9;
   font-size: 32px;
 }
@@ -105,6 +103,11 @@ main {
   width: 302px;
   font-size: 18px;
   color: #fcfaf9;
+}
+.price {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 .usd {
   color: #fcfaf9;
@@ -127,6 +130,7 @@ main {
   font-weight: 700;
   letter-spacing: -0.18px;
   font-family: "IBM Plex Sans", sans-serif;
+  border: none;
 }
 .ios-btn {
   background: #191826;
@@ -134,6 +138,11 @@ main {
 }
 .android-btn {
   background: #fcfaf9;
+}
+.icons-gap {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 /***********************/
 /*EQUALIZER FOOTER*/
@@ -157,6 +166,7 @@ main {
   color: #191826;
   font-size: 16px;
   font-weight: 400;
+  text-align: left;
 }
 .email-link {
   color: #191826;
@@ -169,4 +179,101 @@ main {
   justify-content: center;
   flex-direction: row;
   gap: 20px;
+}
+@media (min-width: 768px) {
+  .discription-equalizer {
+    width: 825px;
+    font-size: 20px;
+    line-height: 34px;
+    margin-bottom: 40px;
+  }
+  h1 {
+    width: 1015px;
+    font-size: 88px;
+    letter-spacing: -1px;
+    line-height: 88px;
+    margin-top: 103px;
+    margin-bottom: 15px;
+  }
+
+  .equalizer-content {
+    background-image: url(./assets/bg-main-tablet.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 450px 164px 164px;
+    position: relative;
+    margin-bottom: -99px;
+  }
+  .tablet-background {
+    background-image: url(./assets/bg-pattern-1.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 500px;
+    height: 350px;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  header {
+    margin-top: -55px;
+  }
+  .illustration-app {
+    width: 1110px;
+  }
+  .app-pic {
+    left: 268px;
+  }
+  .container {
+    position: relative;
+    margin-bottom: 175px;
+  }
+  .premium-eq {
+    position: absolute;
+    top: 292px;
+    right: 110px;
+  }
+  .ios-btn {
+    background: #66e2dc;
+    color: #fcfaf9;
+  }
+  .android-btn {
+    background: #ffb964;
+  }
+  .equalizer-footer {
+    width: 1110px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .social-items {
+    text-align: center;
+    margin: auto 0;
+  }
+  .fc-icon:hover path {
+    fill: #fa7453;
+  }
+  .insta-icon:hover path {
+    fill: #66e2dc;
+  }
+  .twit-icon:hover path {
+    fill: #66e2dc;
+  }
+}
+@media (min-width: 1440px) {
+  .ios-btn {
+    background: #191826;
+    color: #fcfaf9;
+  }
+  .android-btn {
+    background: #fcfaf9;
+  }
+  .fc-icon:hover path {
+    fill: #fa7453;
+  }
+  .insta-icon:hover path {
+    fill: #66e2dc;
+  }
+  .twit-icon:hover path {
+    fill: #66e2dc;
+  }
 }
